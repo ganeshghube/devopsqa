@@ -20,7 +20,7 @@ We need to write code that will query the meta data of an instance within aws an
 Bonus Points
 The code allows for a particular data key to be retrieved individually
 
-Answer : Execute following code :  python output.py | jq -r
+#Answer:Execute following code :  python output.py | jq -r
 ===============================================================
 #!/usr/bin/env python
 
@@ -28,7 +28,7 @@ import requests
 import json
 
 
-# Converts AWS EC2 instance metadata to a dictionary
+#Converts AWS EC2 instance metadata to a dictionary
 def load():
     metaurl = 'http://169.254.169.254/latest'
     # those 3 top subdirectories are not exposed with a final '/'
@@ -97,7 +97,7 @@ Answer
 
 a = {'a':{'b':{'c':'d'}}}
 
-# Iterate over key / value pairs of parent dictionary
+#Iterate over key / value pairs of parent dictionary
 for key, value in a.items():
     print(key)
     # Again iterate over the nested dictionary
